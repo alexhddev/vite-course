@@ -34,3 +34,4 @@ document.querySelector('#app').innerHTML = `
 `
 
 setupCounter(document.querySelector('#counter'))
+console.log(import.meta.env)
