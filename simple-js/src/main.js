@@ -5,6 +5,7 @@ import likeButton from './img/like.svg'
 import londonImg from './img/london.jpg'
 import heart from '/heart.svg'
 import { setupCounter } from './counter.js'
+import { average } from 'cool-math'
 
 document.querySelector('#app').innerHTML = `
   <div>
@@ -34,4 +35,4 @@ document.querySelector('#app').innerHTML = `
 `
 
 setupCounter(document.querySelector('#counter'))
-console.log('Hello from Vite!!!!')
+console.log('Average: ' +  average(1,2,3))

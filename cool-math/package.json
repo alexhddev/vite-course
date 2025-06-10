@@ -3,6 +3,15 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "files": [
+    "dist"
+  ],
+  "module": "./dist/cool-math.js",
+  "exports": {
+    ".": {
+      "import":"./dist/cool-math.js"
+    }
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
