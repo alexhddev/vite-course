@@ -8,7 +8,9 @@ export default defineConfig({
            name: 'coolMath',
            formats: ['es']
         },
-        minify: false
-
+        minify: false,
+        rollupOptions: {
+            external:['uuid']
+        }
     }
 });

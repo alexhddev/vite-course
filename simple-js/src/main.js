@@ -5,7 +5,7 @@ import likeButton from './img/like.svg'
 import londonImg from './img/london.jpg'
 import heart from '/heart.svg'
 import { setupCounter } from './counter.js'
-import { average } from 'cool-math'
+import { average, randomUUID } from 'cool-math'
 
 document.querySelector('#app').innerHTML = `
   <div>
@@ -36,3 +36,4 @@ document.querySelector('#app').innerHTML = `
 
 setupCounter(document.querySelector('#counter'))
 console.log('Average: ' +  average(1,2,3))
+console.log('Random UUID:', randomUUID());
