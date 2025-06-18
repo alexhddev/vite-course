@@ -13,7 +13,10 @@ function manualChunks(id: any){
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(),
-    WatermarkPlugin()
+    WatermarkPlugin({
+      color: 'red',
+      text: 'test stage'
+    })
   ],
   build: {
     rollupOptions: {

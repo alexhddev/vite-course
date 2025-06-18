@@ -2,15 +2,24 @@ import sharp from 'sharp';
 import path from 'path';
 import fs from 'fs/promises';
 
+type options = {
+    text?: string;
+    position?: string;
+    color?: string;
+    fontSize?: number;
+}
 
-export function WatermarkPlugin() {
 
-    const options = {
+export function WatermarkPlugin(options?: options) {
+
+    // Set default options
+    options = {
         text: 'Sample Text',
         position: 'center',
         color: 'white',
-        fontSize: 48
-    }
+        fontSize: 48,
+        ...options
+    };
 
     return {
         name: 'vite-image-text-plugin',
