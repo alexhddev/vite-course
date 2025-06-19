@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import { WatermarkPlugin } from './plugins/WatermarkPlugin'
+import Inspect from 'vite-plugin-inspect'
 
 
 function manualChunks(id: any){
@@ -13,6 +14,7 @@ function manualChunks(id: any){
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(),
+    Inspect(),
     WatermarkPlugin({
       color: 'red',
       text: 'test stage'
