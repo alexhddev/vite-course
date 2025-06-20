@@ -11,8 +11,5 @@
   "devDependencies": {
     "vite": "^6.3.5",
     "vite-plugin-remove-console": "^2.2.0"
-  },
-  "dependencies": {
-    "cool-math": "file:../cool-math"
   }
 }
