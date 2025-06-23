@@ -10,20 +10,22 @@
   "module": "./dist/cool-math.js",
   "exports": {
     ".": {
-      "import":"./dist/cool-math.js",
+      "import": "./dist/cool-math.js",
       "types": "./dist/index.d.ts"
     }
   },
   "scripts": {
     "dev": "vite",
     "build": "vite build && tsc",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test": "vitest"
   },
   "devDependencies": {
     "@types/node": "^24.0.0",
     "@types/uuid": "^10.0.0",
     "typescript": "~5.8.3",
-    "vite": "^6.3.5"
+    "vite": "^6.3.5",
+    "vitest": "^3.2.4"
   },
   "dependencies": {
     "uuid": "^11.1.0"
