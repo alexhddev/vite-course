@@ -7,6 +7,12 @@ import heart from '/heart.svg'
 import { setupCounter } from './counter.js'
 import { average, randomUUID } from 'cool-math'
 
+import './assets/1.css'
+import './assets/2.css'
+import colors from './assets/3.module.css'
+
+console.log(colors)
+
 document.querySelector('#app').innerHTML = `
   <div>
     <a href="https://vite.dev" target="_blank">
@@ -28,6 +34,7 @@ document.querySelector('#app').innerHTML = `
     <div class="card">
       <button id="counter" type="button"></button>
     </div>
+    <p class=${colors.} > This is colored by modules</p>
     <p class="read-the-docs">
       Click on the Vite logo to learn more
     </p>
